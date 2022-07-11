@@ -10,9 +10,9 @@
 # 6. Open pdf
 
 
-for i in $(docker ps -a | grep mkdoc | awk {'print $1'}); do docker stop $i; done
-for i in $(docker ps -a | grep mkdoc | awk {'print $1'}); do docker rm $i; done
-docker rmi mkdocs-material-with-pdf
+#for i in $(docker ps -a | grep mkdoc | awk {'print $1'}); do docker stop $i; done
+#for i in $(docker ps -a | grep mkdoc | awk {'print $1'}); do docker rm $i; done
+#docker rmi mkdocs-material-with-pdf
 
 if [ ! -d mkdocs-with-pdf ]; then
   git clone https://github.com/neubaut/mkdocs-with-pdf.git
