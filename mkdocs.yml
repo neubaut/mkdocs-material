@@ -101,6 +101,8 @@ plugins:
         upgrading.md: upgrade.md
   - minify:
       minify_html: true
+  - extra-sass
+  - with-pdf
 
 # Customization
 extra:
